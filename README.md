@@ -8,14 +8,14 @@ League of legends summoner search & statistics dashboard.
 $ git clone https://github.com/ohstany/lol.git # clone this repo
 $ cd lol # jump into the project
 $ npm i # or yarn
-$ npm run dev # start project in development environment
+$ npm run dev # or yarn dev | to start project in development environment
 ```
 
 ## Create production
 
 ```bash
 $ npm run build # builds production bundle
-$ npm run pro # that's it
+$ npm run pro # run in production mode, that's it
 ```
 
 ## Templating
