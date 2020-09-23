@@ -1,0 +1,34 @@
+.ieblock {
+	text-align: center;
+}
+.ieblock .pagesample {
+	width: 100%;
+	margin: 0 auto;
+}
+.browserblock {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: #ffffff;
+	background: rgba(255, 255, 255, 0.9);
+}
+.browserblock .brp {
+	display: block;
+	margin: 0 auto;
+	padding: 100px 0;
+	width: 700;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 50px;
+}
+.browserblock img {
+	width: 230px;
+	margin-bottom: 20px;
+}
+.browserblock b {
+	color: #129b4b;
+}

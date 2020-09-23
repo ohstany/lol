@@ -1,0 +1,101 @@
+$wd: 140px;
+$h_wd: 68.5px;
+$gr_line: 140px;
+$pcw: 100px;
+
+.progress-pie-chart {
+	border-radius: 50%;
+	position: relative;
+}
+
+.progress-pie-chart * {
+	box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+}
+
+.ppc-progress .ppc-progress-fill {
+	background: #81ce97;
+	transform: rotate(60deg);
+	transition: all 1s;
+}
+
+.ppc-progress {
+	z-index: 1;
+	-webkit-animation: colorload 2s;
+	animation: colorload 2s;
+}
+
+.ppc-progress .ppc-progress-fill,
+.progress-pie-chart,
+.ppc-progress {
+	width: $wd;
+	height: $wd;
+}
+
+.ppc-progress .ppc-progress-fill {
+	clip: rect(0, $h_wd, $wd, 0);
+}
+
+.halfed .ppc-progress {
+	clip: rect(0, $wd, $wd, $h_wd);
+}
+
+.ppc-percents {
+	width: $gr_line;
+	height: $gr_line;
+	border: 30px solid #e5e5e5;
+}
+
+.pcc-percents-wrapper {
+	width: $pcw;
+	height: $pcw;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	input {
+		padding: 0;
+		width: 40px;
+		border: 0;
+		text-align: center;
+		box-shadow: none !important;
+		font-size: 24px;
+		font-weight: bold;
+		color: #000;
+		margin-top: -3px;
+	}
+}
+
+.ppc-progress .ppc-progress-fill,
+.ppc-progress,
+.pcc-percents-wrapper,
+.ppc-percents {
+	position: absolute;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+
+.progress-pie-chart {
+	margin: auto;
+	display: inline-block;
+}
+
+@-webkit-keyframes colorload {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(360deg);
+	}
+}

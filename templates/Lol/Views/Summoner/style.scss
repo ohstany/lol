@@ -1,0 +1,704 @@
+//colors
+$color_link_water_approx: #f7f9fc;
+$color_granny_smith_approx: #879292;
+$color_curious_blue_approx: #1f8ecd;
+$color_gallery_approx: #f0f0f0;
+$black_10: rgba(0, 0, 0, 0.1);
+$color_martini_10_approx: rgba(156, 156, 156, 0.1);
+$color_curious_blue_20_approx: rgba(31, 142, 205, 0.2);
+$color_spindle_50_approx: rgba(167, 200, 228, 0.5);
+$color_mojo_20_approx: rgba(198, 69, 63, 0.2);
+$color_mandy_10_approx: rgba(218, 75, 80, 0.1);
+$white: white;
+$color_mojo_approx: #bf3b36;
+$color_cinnabar_approx: #ec4f48;
+$color_vivid_violet_approx: #7f3590;
+$color_fuchsia_blue_approx: #8c51c5;
+$color_dorado_approx: #555555;
+$color_silver_chalice_10_approx: rgba(168, 168, 168, 0.1);
+$color_mine_shaft_approx: #333333;
+$color_iron_approx: #d0d3d4;
+$color_geyser_approx: #e0e3e3;
+$color_ronchi_approx: #eabd56;
+$color_outer_space_approx: #242929;
+$color_sirocco_approx: #657070;
+$color_cerulean_approx: #059ede;
+$color_wild_sand_approx: whitesmoke;
+$color_mercury_approx: #eaeaea;
+$white_87: rgba(255, 255, 255, 0.87);
+$color_woodsmoke_10_approx: rgba(11, 12, 14, 0.1);
+$color_mirage_approx: #1b2029;
+$color_iron_10_approx: rgba(208, 211, 212, 0.1);
+$color_geyser_10_approx: rgba(224, 227, 227, 0.1);
+$color_tiara_approx: #c5d3d3;
+$color_mine_shaft_10_approx: rgba(32, 32, 32, 0.1);
+$white_60: rgba(255, 255, 255, 0.6);
+$black_20: rgba(0, 0, 0, 0.2);
+$color_shark_approx: #232932;
+$white_20: rgba(255, 255, 255, 0.2);
+$color_rhino_10_approx: rgba(42, 56, 94, 0.1);
+$black_30: rgba(0, 0, 0, 0.3);
+$white_10: rgba(255, 255, 255, 0.1);
+$color_outer_space_10_approx: rgba(31, 36, 37, 0.1);
+$white_30: rgba(255, 255, 255, 0.3);
+$black_70: rgba(0, 0, 0, 0.7);
+
+%extend_1 {
+	width: 22px;
+	height: 22px;
+	margin: 0 2px;
+	border-radius: 3px;
+	vertical-align: top;
+}
+
+.subpage {
+	.rightBar {
+		display: inline-block;
+		vertical-align: top;
+		width: 70%;
+		padding-left: 20px;
+		.filter {
+			font-size: 12px;
+			&.game {
+				i {
+					@extend %extend_1;
+					&.ward {
+						width: 16px;
+						height: 16px;
+					}
+				}
+				img {
+					@extend %extend_1;
+					&.ward {
+						width: 16px;
+						height: 16px;
+					}
+				}
+			}
+			&.cn {
+				background-color: $black_10;
+				.opener {
+					background: $color_martini_10_approx;
+				}
+			}
+			&.c4 {
+				background-color: $color_curious_blue_20_approx;
+				.opener {
+					background: $color_spindle_50_approx;
+				}
+			}
+			&.cr {
+				background-color: $color_mojo_20_approx;
+				.opener {
+					background-color: $color_mandy_10_approx;
+				}
+			}
+			.sep {
+				width: 40px;
+				border-top: 2px solid $black_10;
+				margin: auto;
+				padding: 0;
+				display: inline-block;
+			}
+			b {
+				color: $white;
+				font-size: 12px;
+				padding: 2px 5px;
+				margin: 0 4px;
+				display: inline-block;
+				border-radius: 9px;
+				&.sp1 {
+					border: solid 1px $color_mojo_approx;
+					background-color: $color_cinnabar_approx;
+				}
+				&.sp2 {
+					border: solid 1px $color_vivid_violet_approx;
+					background-color: $color_fuchsia_blue_approx;
+				}
+			}
+			ul {
+				text-align: center;
+				li {
+					padding: 10px 0;
+					span {
+						display: block;
+						padding: 3px 0;
+						color: $color_dorado_approx;
+					}
+					&.opener {
+						width: 35px;
+						border-left: 1px solid $color_silver_chalice_10_approx;
+						vertical-align: bottom;
+						img {
+							cursor: pointer;
+							width: 15px;
+							height: auto;
+						}
+					}
+					&:nth-child(2) {
+						.spells {
+							display: inline-block;
+							width: 25px;
+							margin-left: 2px;
+							img.spell {
+								margin-bottom: 3px;
+							}
+						}
+						span > img {
+							width: 46px;
+							height: 46px;
+							border-radius: 50%;
+						}
+					}
+					&:nth-child(5) {
+						* {
+							vertical-align: middle;
+						}
+						span:first-child {
+							max-width: 104px;
+							text-align: left;
+							margin: auto;
+							img {
+								margin-bottom: 3px;
+							}
+							i {
+								background-color: $black_10;
+								display: inline-block;
+								vertical-align: top;
+							}
+						}
+					}
+					&:nth-child(6) {
+						width: 210px;
+					}
+					&:nth-child(1) span {
+						&:nth-child(1) {
+							font-weight: bold;
+						}
+						&:nth-child(4) {
+							font-weight: bold;
+						}
+					}
+					&:nth-child(3) span:nth-child(1) {
+						font-size: 15px;
+						font-weight: bold;
+					}
+				}
+			}
+			.team {
+				display: inline-block;
+				width: 50%;
+				padding-right: 10px;
+				li {
+					cursor: pointer;
+					vertical-align: top;
+					text-align: left;
+					display: block;
+					color: inherit;
+					text-decoration: none;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					font-size: 12px;
+					padding: 1px 0;
+					* {
+						vertical-align: middle;
+					}
+					img {
+						margin: 0;
+						margin-right: 4px;
+						width: 16px;
+						height: 16px;
+					}
+				}
+			}
+		}
+		.tabs {
+			border-bottom: 1px solid $color_gallery_approx;
+			span {
+				padding: 10px 20px;
+				display: inline-block;
+				cursor: pointer;
+				&.current {
+					border-bottom: 2px solid $color_curious_blue_approx;
+					margin-bottom: -1px;
+				}
+			}
+		}
+		.summary {
+			min-height: 200px;
+			* {
+				vertical-align: middle;
+			}
+			.skeleton {
+				margin-top: 30px;
+			}
+			ul {
+				padding: 9px 20px;
+				li {
+					border-left: 1px solid $color_gallery_approx;
+					&:nth-child(1) {
+						border-left: 0;
+						.chart {
+							display: inline-block;
+							width: 40%;
+						}
+						.stats {
+							display: inline-block;
+							width: 60%;
+							span {
+								padding: 5px 0;
+								&:nth-child(1) {
+									font-weight: bold;
+									color: $color_mine_shaft_approx;
+								}
+								&:nth-child(2) {
+									font-size: 16px;
+									strong {
+										font-weight: bold;
+									}
+								}
+							}
+						}
+						> span:nth-child(1) {
+							text-align: left;
+							display: block;
+							padding-bottom: 10px;
+						}
+					}
+					&:nth-child(3) {
+						text-align: left;
+						padding-left: 25px;
+						vertical-align: top;
+						> span {
+							display: block;
+							margin-bottom: 15px;
+							&:first-child {
+								margin-bottom: 20px;
+								font-size: inherit;
+							}
+							img {
+								width: 34px;
+								height: 34px;
+								float: left;
+								margin-right: 10px;
+							}
+							span {
+								display: inline-block;
+								width: 51%;
+								&:nth-child(2) {
+									font-size: 15px;
+									margin-top: -3px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.mate {
+				text-align: left;
+				padding: 5px 20px;
+				span {
+					width: 81%;
+					display: inline-block;
+					&:nth-child(1) {
+						width: 19%;
+						img {
+							width: 35px;
+							height: 35px;
+						}
+					}
+					> span {
+						width: 100% !important;
+						padding-bottom: 5px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	.heading {
+		padding-top: 20px;
+	}
+	.leftBar {
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+		.rank {
+			font-size: 13px;
+			* {
+				vertical-align: middle;
+			}
+			img {
+				width: 104px;
+				height: 104px;
+			}
+			.imgside {
+				display: inline-block;
+				text-align: center;
+				width: 30%;
+			}
+			.rdetails {
+				display: inline-block;
+				width: 70%;
+				color: $color_granny_smith_approx;
+				b {
+					font-weight: bold;
+				}
+				span {
+					display: block;
+					padding: 4px 0;
+					&.status {
+						font-size: 15px;
+						font-weight: bold;
+						color: $color_curious_blue_approx;
+					}
+					&.unranked {
+						font-size: 13px;
+						font-weight: bold;
+						color: $color_granny_smith_approx;
+					}
+				}
+			}
+			&.rn1 {
+				font-size: 12px;
+				img {
+					width: 64px;
+					height: 64px;
+				}
+				span.status {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	ul {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		li {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	.sheading {
+		padding: 20px 30px;
+		.leagues {
+			padding-bottom: 15px;
+			.lDetail {
+				border-radius: 2px;
+				border: solid 1px $color_iron_approx;
+				background-color: $color_geyser_approx;
+				font-size: 12px;
+				padding: 3px 8px;
+				margin-right: 7px;
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		.summonerDetails {
+			display: inline-block;
+			width: 100%;
+			.imageFrame {
+				display: inline-block;
+				width: 120px;
+				height: 120px;
+				float: left;
+				margin-right: 20px;
+				position: relative;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				.simage {
+					position: absolute;
+					width: 100px;
+					height: 100px;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					top: 0;
+					margin: auto;
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: cover;
+				}
+				.level {
+					width: 44px;
+					height: 24px;
+					line-height: 24px;
+					color: $color_ronchi_approx;
+					background-repeat: no-repeat;
+					background-position: center;
+					position: absolute;
+					bottom: -4px;
+					left: 0;
+					right: 0;
+					margin: auto;
+					text-align: center;
+					font-weight: bold;
+				}
+			}
+			.nameFrame {
+				h1 {
+					font-size: 20px;
+					font-weight: bold;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: normal;
+					letter-spacing: -0.77px;
+					color: $color_outer_space_approx;
+				}
+				span {
+					color: $color_sirocco_approx;
+				}
+				b {
+					color: $color_cerulean_approx;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
+body {
+	background: $color_link_water_approx;
+	&.darkmode {
+		background: #101723e6;
+	}
+}
+.name {
+	font-weight: bold;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.champions {
+	.tabs {
+		text-align: center;
+		span {
+			display: inline-block;
+			background-color: $color_wild_sand_approx;
+			width: 50%;
+			padding: 17px 5px;
+			border-bottom: 1px solid $color_mercury_approx;
+			&.current {
+				background-color: $white;
+				border: 0;
+			}
+		}
+	}
+	.contents {
+		.contab {
+			display: none;
+			&.current {
+				display: block;
+			}
+		}
+		.champData {
+			border-bottom: 1px solid $color_gallery_approx;
+			padding: 5px 15px;
+			* {
+				vertical-align: middle;
+			}
+			&:last-child {
+				border: 0;
+			}
+			.wrange {
+				position: relative;
+				height: 24px;
+				border-radius: 5px;
+				background-color: $color_cinnabar_approx;
+				overflow: hidden;
+				span {
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+				}
+				b {
+					position: absolute;
+					color: $white;
+					font-size: 12px;
+					&:nth-child(2) {
+						left: 8px;
+					}
+					&:nth-child(3) {
+						right: 8px;
+					}
+				}
+			}
+			ul {
+				display: table;
+				table-layout: fixed;
+				width: 80%;
+				float: right;
+				li {
+					display: table-cell;
+					width: 33.3%;
+					text-align: center;
+					&:nth-child(1) {
+						text-align: left;
+					}
+					span {
+						padding: 5px 0;
+						font-size: 12px;
+						display: block;
+						&:nth-child(1) {
+							color: $color_dorado_approx;
+							font-size: 13px;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+			span.imgs {
+				display: inline-block;
+				width: 20%;
+				img {
+					width: 45px;
+					height: 45px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+
+.darkmode {
+	.gridStyle {
+		color: $white_87;
+		background-color: $black_10;
+		box-shadow: 0 0 14px 0 $color_woodsmoke_10_approx;
+	}
+	.header {
+		background: $color_mirage_approx;
+		.hFeatures .searchBox label span {
+			color: $white_30;
+			background: $black_20;
+		}
+	}
+	.subpage {
+		.sheading {
+			.leagues .lDetail {
+				border: solid 1px $color_iron_10_approx;
+				background-color: $color_geyser_10_approx;
+			}
+			.summonerDetails .nameFrame {
+				span {
+					color: #ffffffcc;
+				}
+				h1 {
+					color: $color_geyser_approx;
+				}
+			}
+		}
+		.rightBar {
+			.tabs {
+				border-bottom: 1px solid $black_20;
+			}
+			.summary ul li {
+				border-left: 1px solid $black_20;
+				&:first-child {
+					border: 0;
+				}
+				&:nth-child(1) .stats span:nth-child(1) {
+					color: $color_tiara_approx;
+				}
+			}
+			.filter ul li span {
+				color: $color_tiara_approx;
+			}
+		}
+		.leftBar .rank .rdetails {
+			color: $color_tiara_approx;
+		}
+	}
+	.champions {
+		.tabs span {
+			background-color: $black_10;
+			border-bottom: 1px solid $color_mine_shaft_10_approx;
+			&.current {
+				background: none;
+			}
+		}
+		.contents .champData {
+			border-bottom: 1px solid $black_20;
+			ul li span:nth-child(1) {
+				color: $white_60;
+			}
+		}
+	}
+	.pcc-percents-wrapper {
+		background: $color_shark_approx;
+	}
+	.searchBox {
+		.searchpop {
+			background-color: $color_shark_approx;
+			box-shadow: 0 0 7px 0 $color_rhino_10_approx;
+		}
+		.summonerSmall {
+			background-color: $black_30;
+			box-shadow: 0 0 7px 0 $black_20;
+		}
+		&.small {
+			.tabs .tabsw {
+				color: $color_tiara_approx;
+				border-bottom: 1px solid $black_20;
+				border-left: 1px solid $black_20;
+				background: $black_20;
+				&.current {
+					background: none;
+					border: 0;
+				}
+			}
+			label input {
+				color: $white;
+			}
+		}
+		label {
+			background: $white_10;
+			box-shadow: 0 0 7px 0 $color_outer_space_10_approx;
+		}
+		.tabs .tabsw {
+			color: $white;
+			border-bottom: 1px solid $black_10;
+			border-left: 1px solid $black_10;
+			background: $black_10;
+		}
+	}
+	.summonerSmall {
+		color: $color_tiara_approx;
+	}
+	.landing {
+		.searchBox label {
+			background: $color_shark_approx;
+			input {
+				color: $white;
+			}
+		}
+		.lgp .lol .abg {
+			box-shadow: 0 0 40px 20px $black_70;
+		}
+	}
+	.nothing span {
+		color: $white_20;
+	}
+	.skeleton .skeleton-content {
+		.skeleton-title {
+			background: $black_10;
+		}
+		.skeleton-paragraph > li {
+			background: $black_10;
+			background: linear-gradient(
+				90deg,
+				$black_10 25%,
+				$black_20 37%,
+				$black_10 63%
+			);
+		}
+	}
+	.subpage .rightBar .filter.c4 .opener {
+		background: rgba(167, 200, 228, 0.1);
+	}
+}

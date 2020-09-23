@@ -1,0 +1,40 @@
+// Responsive styles
+$breakpoint-mm-max: 480px;
+$breakpoint-sm-max: 575px;
+$breakpoint-md-max: 768px;
+$breakpoint-lg-max: 1100px;
+$breakpoint-xlg-max: 1500px;
+
+// Small devices
+@mixin mm {
+	@media (max-width: #{$breakpoint-mm-max}) {
+		@content;
+	}
+}
+
+// Small devices
+@mixin sm {
+	@media (max-width: #{$breakpoint-sm-max}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin md {
+	@media (max-width: #{$breakpoint-md-max}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin lg {
+	@media (max-width: #{$breakpoint-lg-max}) {
+		@content;
+	}
+}
+
+@mixin xlg {
+	@media (max-width: #{$breakpoint-xlg-max}) {
+		@content;
+	}
+}

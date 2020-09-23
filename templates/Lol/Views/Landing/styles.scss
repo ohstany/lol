@@ -1,0 +1,105 @@
+//colors
+$color_buddha_gold_approx: #c79100;
+$color_mine_shaft_approx: #292929;
+
+.landing {
+	min-height: 1100px;
+	.background {
+		background-size: cover;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		z-index: -1;
+		top: 0;
+		left: 0;
+	}
+	.lgp {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		width: 100%;
+		height: 460px;
+		left: 0;
+		top: 0;
+		margin-top: 90px;
+		z-index: 1;
+		.lol {
+			position: absolute;
+			border-radius: 5px;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			will-change: transform;
+			background-size: 70%;
+			text-align: center;
+			top: 25%;
+			img {
+				width: 460px;
+			}
+			.abg {
+				position: absolute;
+				width: 400px;
+				height: 110px;
+				margin: 0 auto;
+				right: 0;
+				top: 33px;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				box-shadow: 0 0 110px 20px $color_buddha_gold_approx;
+				border-radius: 45%;
+			}
+			&.lol1 {
+				width: 700px;
+				height: 265px;
+				max-width: 700px;
+				max-height: 250px;
+				top: 55%;
+				z-index: 1;
+			}
+			&.lol2 {
+				z-index: 2;
+				img {
+					width: 390px;
+				}
+			}
+			&.lol3 {
+				z-index: 3;
+				img {
+					width: 390px;
+				}
+			}
+			&.lol4 {
+				z-index: 3;
+				img {
+					width: 300px;
+				}
+			}
+			&.lol5 img {
+				width: 280px;
+			}
+			&.lol6 img {
+				width: 300px;
+			}
+		}
+	}
+	.footer {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		color: $color_mine_shaft_approx;
+		a {
+			color: $color_mine_shaft_approx;
+		}
+	}
+	.searchBox {
+		width: 550px;
+		position: relative;
+		top: 40%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}

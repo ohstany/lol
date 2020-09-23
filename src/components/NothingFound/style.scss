@@ -1,0 +1,18 @@
+$black_20: rgba(0, 0, 0, 0.2);
+
+.nothing {
+	text-align: center;
+	padding-top: 30px;
+	img {
+		width: 100px;
+		filter: grayscale(1);
+		opacity: 0.2;
+	}
+	span {
+		display: block;
+		font-size: 16px;
+		color: $black_20;
+		font-weight: bold;
+		padding-top: 10px;
+	}
+}

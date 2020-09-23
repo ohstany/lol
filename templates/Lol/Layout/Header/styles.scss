@@ -1,0 +1,41 @@
+.header {
+	* {
+		vertical-align: middle;
+	}
+
+	background: #232f46;
+
+	.logo {
+		position: relative;
+		z-index: 100;
+		display: inline-block;
+		width: 30%;
+		padding: 17px 0;
+	}
+
+	.hFeatures {
+		display: inline-block;
+		width: 70%;
+		text-align: right;
+
+		.searchBox {
+			display: inline-block;
+			label span {
+				color: #233046;
+				background: rgba(36, 47, 70, 0.2);
+			}
+			.searchpop {
+				position: absolute;
+				margin-top: 3px;
+			}
+		}
+	}
+
+	svg {
+		width: 70px;
+		cursor: pointer;
+		g {
+			fill: white;
+		}
+	}
+}

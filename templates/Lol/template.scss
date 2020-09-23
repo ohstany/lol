@@ -1,0 +1,103 @@
+@font-face {
+	font-family: "Aktiv Grotesk";
+	src: url("/fonts/a59a10fc173a405262ecba082980066e.eot");
+	src: url("/fonts/a59a10fc173a405262ecba082980066e.eot?#iefix")
+			format("embedded-opentype"),
+		url("/fonts/a59a10fc173a405262ecba082980066e.woff2") format("woff2"),
+		url("/fonts/a59a10fc173a405262ecba082980066e.woff") format("woff"),
+		url("/fonts/a59a10fc173a405262ecba082980066e.ttf") format("truetype"),
+		url("/fonts/a59a10fc173a405262ecba082980066e.svg#Aktiv Grotesk W06 Regular")
+			format("svg");
+}
+
+@font-face {
+	font-family: "NanumSquare";
+	font-weight: 300;
+	src: url("/fonts/NanumSquareL.eot");
+	src: url("/fonts/NanumSquareL.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/NanumSquareL.woff") format("woff"),
+		url("/fonts/NanumSquareL.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "NanumSquare";
+	font-weight: 400;
+	src: url("/fonts/NanumSquareR.eot");
+	src: url("/fonts/NanumSquareR.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/NanumSquareR.woff") format("woff"),
+		url("/fonts/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "NanumSquare";
+	font-weight: 700;
+	src: url("/fonts/NanumSquareB.eot");
+	src: url("/fonts/NanumSquareB.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/NanumSquareB.woff") format("woff"),
+		url("/fonts/NanumSquareB.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "NanumSquare";
+	font-weight: 800;
+	src: url("/fonts/NanumSquareEB.eot");
+	src: url("/fonts/NanumSquareEB.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/NanumSquareEB.woff") format("woff"),
+		url("/fonts/NanumSquareEB.ttf") format("truetype");
+}
+
+body {
+	font-size: 14px;
+	font-weight: 1.5;
+	font-family: "NanumSquare", "Aktiv Grotesk", -apple-system,
+		BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+		"Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+	transition: all 0.3s;
+	text-decoration: none;
+	color: #39a4ff;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+.gridStyle {
+	color: rgba(0, 0, 0, 0.87);
+	transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	background-color: #fff;
+	box-shadow: 0 0 14px 0 rgba(53, 64, 82, 0.05);
+	border-radius: 3px;
+	padding: 20px;
+	margin: 10px 0;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-track {
+	background: #f1eeee;
+}
+::-webkit-scrollbar-thumb {
+	background: #bfbfbf;
+}

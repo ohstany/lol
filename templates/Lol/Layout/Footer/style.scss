@@ -1,0 +1,27 @@
+.footer {
+	padding: 20px 0;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+		}
+		li:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	a {
+		color: #434343;
+	}
+
+	a:hover {
+		color: black;
+	}
+
+	.copyright {
+		margin-top: 10px;
+	}
+}
