@@ -4,7 +4,7 @@ League of legends summoner search & statistics dashboard.
 
 ## Requirements
 
-You must use `"node": ">=8.0.0"`. Works on both Windows and Unix systems.
+You must use `"node": ">=8.0.0"`. Works on both Windows and Unix systems. Modern browser.
 
 
 ## Installation & development deployment
