@@ -85,7 +85,7 @@ Parameters
 
 Whole usecase
 
-```json
+```javascript
 actioner({
    reduce: "GET_BASE_SUMMONER",
    action: `${type}/${value}`,
@@ -94,7 +94,7 @@ actioner({
 
 Possible to do multiple actioners at the same time. Ii will call 3 separate api requests and reduce them to the store.
 
-```json
+```javascript
 actioner([
    {
       reduce: "GET_BASE_SUMMONER",
