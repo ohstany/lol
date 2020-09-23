@@ -25,8 +25,8 @@ Project implemented templating system and from the terminal it is easy to pick u
 ```json
 "scripts": {
    "build": "cross-env BUILD='lol' TEMPLATE='lol' API_HOST='https://codingtest.op.gg' API_PREFIX='/api/' ROBOTS='allow' NODE_ENV=production PORT=3000 next build",
-	"dev": "cross-env BUILD='lol' TEMPLATE='lol' API_HOST='https://codingtest.op.gg' API_PREFIX='/api/' ROBOTS='allow' NODE_ENV=development PORT=3000 node server.js",
-	"pro": "cross-env BUILD='lol' TEMPLATE='lol' API_HOST='https://codingtest.op.gg' API_PREFIX='/api/' ROBOTS='allow' NODE_ENV=production PORT=3000 node server.js"
+   "dev": "cross-env BUILD='lol' TEMPLATE='lol' API_HOST='https://codingtest.op.gg' API_PREFIX='/api/' ROBOTS='allow' NODE_ENV=development PORT=3000 node server.js",
+   "pro": "cross-env BUILD='lol' TEMPLATE='lol' API_HOST='https://codingtest.op.gg' API_PREFIX='/api/' ROBOTS='allow' NODE_ENV=production PORT=3000 node server.js"
 }
 ```
 
