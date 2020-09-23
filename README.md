@@ -2,7 +2,7 @@
 
 League of legends summoner search & statistics dashboard.
 
-## Installation & development deploy
+## Installation & development deployment
 
 ```bash
 $ git clone https://github.com/ohstany/lol.git # clone this repo
