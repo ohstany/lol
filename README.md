@@ -2,6 +2,15 @@
 
 League of legends summoner search & statistics dashboard.
 
+## Requirements
+
+-  You must use `"node": ">=8.0.0"`. Works on both Windows and Unix systems.
+
+```bash
+$ npm run build # builds production bundle
+$ npm run pro # run in production mode, that's it
+```
+
 ## Installation & development deployment
 
 ```bash
