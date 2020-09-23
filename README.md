@@ -4,12 +4,8 @@ League of legends summoner search & statistics dashboard.
 
 ## Requirements
 
--  You must use `"node": ">=8.0.0"`. Works on both Windows and Unix systems.
+You must use `"node": ">=8.0.0"`. Works on both Windows and Unix systems.
 
-```bash
-$ npm run build # builds production bundle
-$ npm run pro # run in production mode, that's it
-```
 
 ## Installation & development deployment
 
@@ -19,6 +15,7 @@ $ cd lol # jump into the project
 $ npm i # or yarn
 $ npm run dev # or yarn dev | to start project in development environment
 ```
+Than go to the browser and access http://localhost:3000/
 
 ## Create production
 
