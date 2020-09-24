@@ -40,7 +40,7 @@ export const copyToClipboard = (str) => {
 export const checkDay = () => {
 	const hour = moment().hour();
 
-	return hour > 19 || hour < 5 ? "dark" : "light";
+	return hour > 19 || hour <= 5 ? "dark" : "light";
 };
 
 export const debounce = (func, wait, immediate) => {
