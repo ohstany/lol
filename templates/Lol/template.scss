@@ -79,6 +79,10 @@ ul {
 .container {
 	width: 1240px;
 	margin: 0 auto;
+
+	@include md {
+		width: 100%;
+	}
 }
 
 .gridStyle {

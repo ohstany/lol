@@ -25,6 +25,13 @@ $color_mine_shaft_approx: #292929;
 		top: 0;
 		margin-top: 90px;
 		z-index: 1;
+
+		@include md {
+			height: 400px;
+			margin-top: 30px;
+			overflow: hidden;
+		}
+
 		.lol {
 			position: absolute;
 			border-radius: 5px;
@@ -35,8 +42,17 @@ $color_mine_shaft_approx: #292929;
 			background-size: 70%;
 			text-align: center;
 			top: 25%;
+
+			@include md {
+				top: 41%;
+			}
+
 			img {
 				width: 460px;
+
+				@include md {
+					width: 290px;
+				}
 			}
 			.abg {
 				position: absolute;
@@ -50,6 +66,10 @@ $color_mine_shaft_approx: #292929;
 				z-index: -1;
 				box-shadow: 0 0 110px 20px $color_buddha_gold_approx;
 				border-radius: 45%;
+				@include md {
+					width: 200px;
+					height: 60px;
+				}
 			}
 			&.lol1 {
 				width: 700px;
@@ -58,30 +78,18 @@ $color_mine_shaft_approx: #292929;
 				max-height: 250px;
 				top: 55%;
 				z-index: 1;
-			}
-			&.lol2 {
-				z-index: 2;
-				img {
-					width: 390px;
+
+				@include md {
+					width: 100%;
 				}
 			}
-			&.lol3 {
-				z-index: 3;
-				img {
-					width: 390px;
-				}
-			}
-			&.lol4 {
-				z-index: 3;
-				img {
-					width: 300px;
-				}
-			}
-			&.lol5 img {
-				width: 280px;
-			}
+
 			&.lol6 img {
 				width: 300px;
+
+				@include md {
+					width: 200px;
+				}
 			}
 		}
 	}
@@ -101,5 +109,22 @@ $color_mine_shaft_approx: #292929;
 		left: 0;
 		right: 0;
 		margin: auto;
+
+		@include md {
+			width: 100%;
+			padding: 0 10px;
+		}
+	}
+
+	@include md {
+		min-height: 700px;
+
+		.summonerSmall {
+			.simg {
+				@include md {
+					width: 15%;
+				}
+			}
+		}
 	}
 }

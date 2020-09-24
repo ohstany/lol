@@ -47,6 +47,10 @@ $color_mustard_approx: #ffd94e;
 			margin-right: 10px;
 			width: 11%;
 			text-align: center;
+
+			@include md {
+				width: 15%;
+			}
 		}
 		input {
 			outline: none;
@@ -149,6 +153,9 @@ $color_mustard_approx: #ffd94e;
 				height: 44px;
 				border-radius: 50%;
 			}
+			@include md {
+				width: 10%;
+			}
 		}
 		.sdet {
 			display: inline-block;
@@ -188,6 +195,10 @@ $color_mustard_approx: #ffd94e;
 				&.remove {
 					@extend %extend_1;
 				}
+			}
+
+			@include md {
+				width: 65%;
 			}
 		}
 		.sactions {

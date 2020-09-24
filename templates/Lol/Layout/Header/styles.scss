@@ -11,6 +11,10 @@
 		display: inline-block;
 		width: 30%;
 		padding: 17px 0;
+
+		@include md {
+			width: 100%;
+		}
 	}
 
 	.hFeatures {
@@ -29,6 +33,22 @@
 				margin-top: 3px;
 			}
 		}
+
+		@include md {
+			width: 100%;
+			margin-bottom: 10px;
+
+			.searchBox.small {
+				width: 100%;
+			}
+
+			.shiftBtn {
+				right: 0;
+				top: 13px;
+				z-index: 1001;
+				position: absolute;
+			}
+		}
 	}
 
 	svg {
@@ -37,5 +57,9 @@
 		g {
 			fill: white;
 		}
+	}
+
+	@include md {
+		padding: 0 10px;
 	}
 }
